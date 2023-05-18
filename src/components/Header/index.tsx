@@ -1,4 +1,4 @@
-import { Scroll, Timer, Hourglass } from 'phosphor-react'
+import { Scroll, Timer } from 'phosphor-react'
 import { HeaderContainer } from './styles'
 import { NavLink } from 'react-router-dom'
 
@@ -6,14 +6,16 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <span>
-        <Hourglass size={30} color="#faff00" />
+        <p>
+          <span> Pomo App </span>
+        </p>
       </span>
       <nav>
         <NavLink to="/" title="Timer">
-          <Timer size={24} />
+          <Timer size={30} />
         </NavLink>
         <NavLink to="/history" title="Histórico">
-          <Scroll size={24} />
+          <Scroll size={30} />
         </NavLink>
       </nav>
     </HeaderContainer>

@@ -5,6 +5,11 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
 
+  span {
+    font-size: 2.1rem;
+    color: ${(props) => props.theme['gray-100']};
+  }
+
   nav {
     display: flex;
     gap: 0.5rem;
