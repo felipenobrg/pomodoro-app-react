@@ -1,12 +1,11 @@
-import { Scroll, Timer } from 'phosphor-react'
+import { Scroll, Timer, Hourglass } from 'phosphor-react'
 import { HeaderContainer } from './styles'
-import PodomoroLogoPng from '../../public/PodomoroLogo.png'
 
 export const Header = () => {
   return (
     <HeaderContainer>
       <span>
-        <img src={PodomoroLogoPng} alt="" />
+        <Hourglass size={30} color="#faff00" />
       </span>
       <nav>
         <a href="">
