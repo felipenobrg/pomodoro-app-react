@@ -1,5 +1,6 @@
 import { Scroll, Timer, Hourglass } from 'phosphor-react'
 import { HeaderContainer } from './styles'
+import { NavLink } from 'react-router-dom'
 
 export const Header = () => {
   return (
@@ -8,12 +9,12 @@ export const Header = () => {
         <Hourglass size={30} color="#faff00" />
       </span>
       <nav>
-        <a href="">
+        <NavLink to="/" title="Timer">
           <Timer size={24} />
-        </a>
-        <a href="">
+        </NavLink>
+        <NavLink to="/history" title="Histórico">
           <Scroll size={24} />
-        </a>
+        </NavLink>
       </nav>
     </HeaderContainer>
   )
