@@ -57,11 +57,11 @@ export const Home = () => {
         )
       }, 1000)
     }
-  
-  return () => {
-    clearInterval(interval)
-  }, 
-}, [activeCycle])
+
+    return () => {
+      clearInterval(interval)
+    }
+  }, [activeCycle])
 
   const handleCreateNewCycle = (data: NewCycleFormData) => {
     const id = String(new Date().getTime())
@@ -88,6 +88,12 @@ export const Home = () => {
 
   const minutes = String(minutesAmount).padStart(2, '0')
   const second = String(secondAmout).padStart(2, '0')
+
+  useEffect(() => {
+    if (activeCycle) {
+      document.title = `${minutes}:${second}`
+    }
+  }, [minutes, second, activeCycle])
 
   const task = watch('task')
   const isSubmitDisabled = !task
