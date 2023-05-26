@@ -9,6 +9,7 @@ import {
   StartCountDownButton,
   StopCountDownButton,
 } from './styles'
+
 import { useContext } from 'react'
 import { CyclesContext } from '../../context/CyclesContext'
 import { NewCycleForm } from './components/NewCycleForm'

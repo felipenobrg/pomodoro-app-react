@@ -20,6 +20,8 @@ export const NewCycleForm = () => {
 
       <datalist id="task-suggestion">
         <option value="Projeto 1"></option>
+        <option value="Projeto 2"></option>
+        <option value="Projeto 3"></option>
       </datalist>
 
       <label htmlFor="minutesAmount">durante</label>
